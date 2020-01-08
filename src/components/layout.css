@@ -1,0 +1,70 @@
+/* purgecss start ignore */
+@tailwind base;
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap');
+
+/* General elements */
+body {
+  @apply min-h-screen font-body;
+}
+/* purgecss end ignore */
+
+@tailwind components;
+@tailwind utilities;
+
+.h1 {
+  @apply text-4xl;
+}
+
+.h2 {
+  @apply text-2xl;
+}
+
+.h3 {
+  @apply text-xl;
+}
+
+.h4 {
+  @apply text-lg;
+}
+
+@screen md {
+  .h1 {
+    @apply text-5xl;
+  }
+
+  .h2 {
+    @apply text-3xl;
+  }
+
+  .h3 {
+    @apply text-2xl;
+  }
+
+  .h4 {
+    @apply text-xl;
+  }
+}
+
+/* Buttons */
+.btn {
+  @apply inline-block text-center rounded-full py-4 px-10;
+}
+
+.btn[disabled] {
+  @apply opacity-25 cursor-not-allowed;
+}
+
+.btn-primary {
+  @apply bg-primary text-white;
+}
+
+.btn-primary-bordered {
+  @apply border-2 border-primary;
+}
+
+/* Utils */
+.bordered-title::after {
+  @apply bg-accent block h-1 mt-2 w-12;
+  content: "";
+}
