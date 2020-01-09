@@ -6,6 +6,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 import cvFile from "../assets/cv-sv.pdf"
+import dannie from "../assets/images/dannie.png"
 
 const frontendSkills = [
   "HTML",
@@ -39,20 +40,31 @@ const IndexPage = () => (
     <SEO title="Freelancer" />
     <div className="bg-white">
       <section className="px-8 py-8 md:py-24">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-start">
-          <div className="">
+        <div className="max-w-4xl mx-auto">
+          <div>
             <h1 className="h1 text-indigo-500 leading-none">
               Dannie Håkansson
             </h1>
-            <h2 className="mt-4 h2 leading-none text-gray-500">Fullstack Developer</h2>
-            <p className="mt-8">
-              Lösningsorienterad systemutvecklare med intresse för träning och
-              välmående. Trivs väl i mindre som större teams. Jag värderar högt
-              att mina kollegor ska må så bra som möjligt, och arbetar helst med
-              struktur och process med fokus på kommunikation. Drar mig aldrig
-              från att lära mig nya tekniker, och letar alltid efter sätt att
-              förbättras inom yrkesrollen.
-            </p>
+            <h2 className="mt-2 md:mt-4 h2 leading-none text-gray-500">
+              Fullstack Developer
+            </h2>
+            <div className="mt-4 md:mt-8 flex flex-col md:flex-row md:items-center">
+              <div className="flex-none">
+                <img
+                  className="w-20 h-20 md:w-32 md:h-32 object-cover object-top border-4 border-gray bg-gray-100 rounded-full"
+                  src={dannie}
+                  alt=""
+                />
+              </div>
+              <p className="mt-4 md:mt-0 md:ml-8">
+                Lösningsorienterad systemutvecklare med intresse för träning och
+                välmående. Trivs väl i mindre som större teams. Jag värderar
+                högt att mina kollegor ska må så bra som möjligt, och arbetar
+                helst med struktur och process med fokus på kommunikation. Drar
+                mig aldrig från att lära mig nya tekniker, och letar alltid
+                efter sätt att förbättras inom yrkesrollen.
+              </p>
+            </div>
             <div className="mt-8 -mx-2 flex flex-col sm:flex-row">
               <div className="px-2">
                 <a
@@ -67,7 +79,7 @@ const IndexPage = () => (
                   href="mailto:danniehakan@gmail.com"
                   className="px-4 py-3 inline-block w-full sm:w-auto text-center border border-indigo-500 hover:bg-indigo-500 active:bg-indigo-600 text-indigo-500 hover:text-white font-semibold rounded-lg"
                 >
-                  Contact
+                  Contact me
                 </a>
               </div>
             </div>
