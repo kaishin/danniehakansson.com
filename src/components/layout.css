@@ -46,23 +46,6 @@ body {
   }
 }
 
-/* Buttons */
-.btn {
-  @apply inline-block text-center rounded-full py-4 px-10;
-}
-
-.btn[disabled] {
-  @apply opacity-25 cursor-not-allowed;
-}
-
-.btn-primary {
-  @apply bg-primary text-white;
-}
-
-.btn-primary-bordered {
-  @apply border-2 border-primary;
-}
-
 /* Utils */
 .bordered-title::after {
   @apply bg-accent block h-1 mt-2 w-12;
