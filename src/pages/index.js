@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-import cvFile from "../assets/cv-sv.pdf"
+import cvFile from "../assets/cv-en.pdf"
 
 const frontendSkills = [
   "HTML",
@@ -34,22 +34,20 @@ const backendSkills = [
   "Java",
 ]
 
-
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
-      query {
-        placeholderImage: file(relativePath: { eq: "dannie.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 120) {
-              ...GatsbyImageSharpFluid
-            }
+    query {
+      placeholderImage: file(relativePath: { eq: "dannie.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 120) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
-    `)
-  
-  return (
+    }
+  `)
 
+  return (
     <Layout>
       <SEO title="Freelancer" />
       <div className="bg-white">
@@ -64,15 +62,19 @@ const IndexPage = () => {
               </h2>
               <div className="mt-4 md:mt-8 flex flex-col md:flex-row md:items-center">
                 <div className="flex-none">
-                  <Image data={data} className="w-20 h-20 md:w-32 md:h-32 object-top border-4 border-gray-300 bg-gray-100 rounded-full"/>
+                  <Image
+                    data={data}
+                    className="w-20 h-20 md:w-32 md:h-32 object-top border-4 border-gray-300 bg-gray-100 rounded-full"
+                  />
                 </div>
                 <p className="mt-4 md:mt-0 md:ml-8">
-                  Lösningsorienterad systemutvecklare med intresse för träning och
-                  välmående. Trivs väl i mindre som större teams. Jag värderar
-                  högt att mina kollegor ska må så bra som möjligt, och arbetar
-                  helst med struktur och process med fokus på kommunikation. Drar
-                  mig aldrig från att lära mig nya tekniker, och letar alltid
-                  efter sätt att förbättras inom yrkesrollen.
+                  Solution-oriented developer with a passion for exercise and
+                  well-being. I am comfortable working in smaller as well as
+                  bigger teams. I value highly that my colleagues are feeling as
+                  good as possible, and I prefer to work with structure and
+                  process with a focus on team communication. I never resist to
+                  learn new technologies, and I am always on the lookout for
+                  possible ways to improve myself in the profession.
                 </p>
               </div>
               <div className="mt-8 -mx-2 flex flex-col sm:flex-row">
