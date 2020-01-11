@@ -17,21 +17,18 @@ const frontendSkills = [
   "AngularJS",
   "FabricJS",
   "Phaser.io",
-  "SASS",
-  "CSS Modules",
   "jQuery",
 ]
 
 const backendSkills = [
-  "Docker",
   "Python",
   "Django",
+  "Node",
+  "Postgres",
+  "Docker",
   "Kubernetes",
   "Google Cloud Platform",
-  "PostgreSQL",
-  "Node",
-  "Git",
-  "Java",
+  "CI/CD"
 ]
 
 const IndexPage = () => {
