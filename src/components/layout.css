@@ -51,3 +51,22 @@ body {
   @apply bg-accent block h-1 mt-2 w-12;
   content: "";
 }
+
+/* Project item */
+.project-item {
+ transition: all 100ms linear; 
+}
+
+.animation-target {
+  @apply relative;
+  transition: left 100ms linear;
+  left: 0;
+}
+
+.project-item:hover .animation-target {
+  left: 20px;
+}
+
+.project-item:hover {
+  @apply bg-indigo-500 rounded;
+}

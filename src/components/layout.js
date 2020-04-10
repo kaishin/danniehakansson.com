@@ -24,15 +24,15 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+    <div className="pt-4 md:pt-8">
+      <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
-      <footer className="px-8 py-8">
+      <footer className="px-8 py-8 border-t border-gray-300">
         <div className="max-w-4xl mx-auto">
           <p>Made with love by Dannie 👾</p>
         </div>
       </footer>
-    </>
+    </div>
   )
 }
 
