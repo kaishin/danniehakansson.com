@@ -7,6 +7,10 @@
 body {
   @apply min-h-screen font-body;
 }
+
+article > * {
+  @apply my-4;
+}
 /* purgecss end ignore */
 
 @tailwind components;
