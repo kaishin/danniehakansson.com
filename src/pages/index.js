@@ -34,7 +34,7 @@ const backendSkills = [
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "dannie.png" }) {
+      placeholderImage: file(relativePath: { eq: "dannie.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 120) {
             ...GatsbyImageSharpFluid
