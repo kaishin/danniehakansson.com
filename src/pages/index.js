@@ -64,13 +64,13 @@ const IndexPage = () => {
                 />
               </div>
               <p className="mt-4 md:mt-0 md:ml-8">
-                Solution-oriented developer with a passion for exercise and
+                Solution-oriented developer with a passion for problems, exercise and
                 well-being. I am comfortable working in smaller as well as
-                bigger teams. I value highly that my colleagues are feeling as
-                good as possible, and I prefer to work with structure and
+                bigger teams-but not medium teams, I hate those. I value highly that my colleagues are feeling as
+                good as possible, within reasonable limits, and I prefer to work with structure and
                 process with a focus on team communication. I never resist to
-                learn new technologies, and I am always on the lookout for
-                possible ways to improve myself in the profession.
+                learn new technologies, but I resist bothering with old ones. I am always on the lookout for
+                possible ways to improve myself in the profession, but sometimes I just like to live and let live. 
               </p>
             </div>
             <div className="mt-8 -mx-2 flex flex-col sm:flex-row">
