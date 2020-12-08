@@ -66,7 +66,7 @@ const IndexPage = () => {
               <p className="mt-4 md:mt-0 md:ml-8">
                 Solution-oriented developer with a passion for exercise and
                 well-being. I am comfortable working in smaller as well as
-                bigger teams. I value highly that my colleagues are feeling as
+                bigger teams. I highly value that my colleagues are feeling as
                 good as possible, and I prefer to work with structure and
                 process with a focus on team communication. I never resist to
                 learn new technologies, and I am always on the lookout for
